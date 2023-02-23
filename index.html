@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark fixed-top">
+        <a href="#" class="flex-grow-1 px-2">
+            <img src="./public/MS Icon - Grey Simple.png" width="40px" height="40px" alt="Link to go Home" class="nav-link link-light">
+        </a>
+        <a href="https://github.com/marcuswonder" target=”_blank” class="px-3">
+            <img src="./public/GitHub_Logo_White.png" height="30px" alt="Link to Marcus Smith's Github" class="nav-link link-light shadow-2-strong">
+        </a>
+        <a href="https://www.linkedin.com/in/marcusbrucesmith/" target=”_blank” class="px-3">
+            <img src="./public/LI-Logo-White.png" height=22px" alt="Link to Marcus Smith's LinkedIn" class="nav-link link-light">
+        </a>
+        <a href="/#contact" class="link-light px-3"><svg xmlns="http://www.w3.org/2000/svg" alt="Link to Marcus Smith's Contact Form" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+        </a>
+    </nav>
+
+
+   
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand navbar-dark bg-light justify-content-center">
+                <div class="col-3 text-end">
+                    <a class="nav-link link-dark px-3" href="#">professional</a>
+                </div>
+                <div class="col-md-auto px-2">
+                    <div class="form-check form-switch d-flex justify-content-center">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                    </div>
+                </div>
+                <div class="col-3 text-start">
+                    <a class="nav-link link-dark px-3" href="#" width="88px">personal</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center" style="height:auto;width:100%;">
+            <div class="col align-items-end d-none d-md-block" class="header-h1" style="padding-top:5%" >
+                <p class="h1 text-end">professional</p>
+                <p class="p text-end">Full Stack web developer with experience across the MERN stack</p>
+            </div>
+            <div class="col">
+                <div class="pt-md-5"><img src="./public/Professional Photo 2 - Cropped No Background Posterized.png" width="100%"></div>
+            </div>
+            <div class="col d-none d-md-block" style="padding-top:5%">
+                <p class="h1">personal</p>
+                <p class="p">Devoted traveller and explorer with DINKWAD aspirations</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container professionalEl">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-dark justify-content-center" class="sub-sub-nav">
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">about me</div>
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">skills</div> 
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">projects</div>
+            </nav>
+        </div>
+    </div>
+    <div class="container personalEl">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-dark justify-content-center" class="sub-sub-nav">
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">about me</div>
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">interests</div>
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">projects</div>
+            </nav>
+        </div>
+    </div>
+    <div class="container bg-">
+        <div class="row align-items-center" width=70%>
+            <div class="professionalEl row text-center py-4" id="font-black">
+                <h1 class="h1">About Me</h1>
+                    <p class="p">Professional about me. Professional about me. Professional about me. Professional about me. Professional about me. Professional about me. Professional about me. Professional about me. Professional about me. Professional about me. Professional about me. Professional about me. Professional about me. </p>
+                </div>
+            </div>
+            <div class="row align-items-center" width=70%>
+                <div class="personalEl row row text-center py-4">
+                    <h1 class="h1">About Me</h1>
+                    <p class="p">Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. Personal about me. </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        const toggleEl = document.getElementById('flexSwitchCheckDefault')
+        const personalEl = Array.from(document.getElementsByClassName("personalEl"))
+        const professionalEl = Array.from(document.getElementsByClassName("professionalEl"))
+        
+    
+        window.onload = function hideElements() {
+            if(toggleEl.checked === true) {
+                console.log("toggle is checked to personal")
+                professionalEl.forEach(function(el) {
+                    el.style.display = 'none'
+                })
+            } else {
+                console.log("toggle is checked to professional")
+                personalEl.forEach(function(el) {
+                    el.style.display = 'none'
+                })
+            }
+        }
+
+        toggleEl.addEventListener('click', function() {
+            if(toggleEl.checked === true) {
+                console.log("toggle is checked to personal")
+                professionalEl.forEach(function(el) {
+                    el.style.display = 'none'
+                })
+                personalEl.forEach(function(el) {
+                    el.style.display = ''
+                })
+            } else {
+                console.log("toggle is checked to professional")
+                professionalEl.forEach(function(el) {
+                    el.style.display = ''
+                })
+                personalEl.forEach(function(el) {
+                    el.style.display = 'none'
+                })
+            }
+        })
+
+    </script>
+
+</html>
