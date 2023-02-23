@@ -63,18 +63,30 @@
     <div class="container professionalEl">
         <div class="row">
             <nav class="navbar navbar-expand-lg bg-dark justify-content-center" class="sub-sub-nav">
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">about me</div>
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">skills</div> 
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">projects</div>
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="professional-about">about me</button>
+                    </div>
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="professional-skills">skills</button>
+                </div> 
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="professional-projects">projects</button>
+                </div>
             </nav>
         </div>
     </div>
     <div class="container personalEl">
         <div class="row">
             <nav class="navbar navbar-expand-lg bg-dark justify-content-center" class="sub-sub-nav">
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">about me</div>
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">interests</div>
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">projects</div>
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-about">about me</button>
+                </div>
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-interests">interests</button>
+                </div>
+                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-projects">projects</button>
+                </div>
             </nav>
         </div>
     </div>
@@ -104,7 +116,12 @@
         const toggleEl = document.getElementById('flexSwitchCheckDefault')
         const personalEl = Array.from(document.getElementsByClassName("personalEl"))
         const professionalEl = Array.from(document.getElementsByClassName("professionalEl"))
-        
+        const professionalAboutEl = document.getElementById("professional-about")
+        const professionalSkillsEl = document.getElementById("professional-skills")
+        const professionalProjectsEl = document.getElementById("professional-projects")
+        const personalAboutEl = document.getElementById("personal-about")
+        const personalInterestsEl = document.getElementById("personal-interests")
+        const personalProjectsEl = document.getElementById("personal-projects")
     
         window.onload = function hideElements() {
             if(toggleEl.checked === true) {
@@ -112,13 +129,16 @@
                 professionalEl.forEach(function(el) {
                     el.style.display = 'none'
                 })
+                personalAboutEl.setAttribute('selected', 'true')
             } else {
                 console.log("toggle is checked to professional")
                 personalEl.forEach(function(el) {
                     el.style.display = 'none'
                 })
+                professionalAboutEl.setAttribute('selected', 'true')
             }
         }
+
 
         toggleEl.addEventListener('click', function() {
             if(toggleEl.checked === true) {
@@ -129,6 +149,8 @@
                 personalEl.forEach(function(el) {
                     el.style.display = ''
                 })
+                personalAboutEl.setAttribute('selected', 'true')
+                professionalAboutEl.setAttribute('selected', 'false')
             } else {
                 console.log("toggle is checked to professional")
                 professionalEl.forEach(function(el) {
@@ -137,9 +159,86 @@
                 personalEl.forEach(function(el) {
                     el.style.display = 'none'
                 })
+                personalAboutEl.setAttribute('selected', 'false')
+                professionalAboutEl.setAttribute('selected', 'true')
             }
         })
 
+        // function deselectAllNavButtonEls() {
+        //     let NavButtonEls = Array.from(document.querySelector(".nav-button"))
+        //     NavButtonEls.forEach(function(el) {
+        //             el.setAttribute('selected', 'false')
+        //         }
+        //     )
+        // }
+        
+
+        professionalAboutEl.onclick = function() {
+            professionalAboutEl.setAttribute('selected', 'false')
+            professionalSkillsEl.setAttribute('selected', 'false')
+            professionalProjectsEl.setAttribute('selected', 'false')
+            personalAboutEl.setAttribute('selected', 'false')
+            personalInterestsEl.setAttribute('selected', 'false')
+            personalProjectsEl.setAttribute('selected', 'false')
+
+            professionalAboutEl.setAttribute('selected', 'true')
+        }
+
+        professionalSkillsEl.onclick = function() {
+            professionalAboutEl.setAttribute('selected', 'false')
+            professionalSkillsEl.setAttribute('selected', 'false')
+            professionalProjectsEl.setAttribute('selected', 'false')
+            personalAboutEl.setAttribute('selected', 'false')
+            personalInterestsEl.setAttribute('selected', 'false')
+            personalProjectsEl.setAttribute('selected', 'false')
+
+            professionalSkillsEl.setAttribute('selected', 'true')
+        }
+
+        professionalProjectsEl.onclick = function() {
+            professionalAboutEl.setAttribute('selected', 'false')
+            professionalSkillsEl.setAttribute('selected', 'false')
+            professionalProjectsEl.setAttribute('selected', 'false')
+            personalAboutEl.setAttribute('selected', 'false')
+            personalInterestsEl.setAttribute('selected', 'false')
+            personalProjectsEl.setAttribute('selected', 'false')
+
+            professionalProjectsEl.setAttribute('selected', 'true')
+        }
+
+        personalAboutEl.onclick = function() {
+            professionalAboutEl.setAttribute('selected', 'false')
+            professionalSkillsEl.setAttribute('selected', 'false')
+            professionalProjectsEl.setAttribute('selected', 'false')
+            personalAboutEl.setAttribute('selected', 'false')
+            personalInterestsEl.setAttribute('selected', 'false')
+            personalProjectsEl.setAttribute('selected', 'false')
+
+            personalAboutEl.setAttribute('selected', 'true')
+        }
+
+        personalInterestsEl.onclick = function() {
+            professionalAboutEl.setAttribute('selected', 'false')
+            professionalSkillsEl.setAttribute('selected', 'false')
+            professionalProjectsEl.setAttribute('selected', 'false')
+            personalAboutEl.setAttribute('selected', 'false')
+            personalInterestsEl.setAttribute('selected', 'false')
+            personalProjectsEl.setAttribute('selected', 'false')
+
+            personalInterestsEl.setAttribute('selected', 'true')
+        }
+
+        personalProjectsEl.onclick = function() {
+            professionalAboutEl.setAttribute('selected', 'false')
+            professionalSkillsEl.setAttribute('selected', 'false')
+            professionalProjectsEl.setAttribute('selected', 'false')
+            personalAboutEl.setAttribute('selected', 'false')
+            personalInterestsEl.setAttribute('selected', 'false')
+            personalProjectsEl.setAttribute('selected', 'false')
+
+            personalProjectsEl.setAttribute('selected', 'true')
+        }
+        
     </script>
 
 </html>
