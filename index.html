@@ -83,7 +83,7 @@
                     <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-about-button">about me</button>
                 </div>
                 <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
-                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-interests-button">interests</button>
+                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-experiences-button">experiences</button>
                 </div>
                 <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
                     <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-projects-button">projects</button>
@@ -114,10 +114,10 @@
                 <p class="p">My professional skills. My professional skills. My professional skills. My professional skills. My professional skills. My professional skills. </p>
             </div>
         </div>
-        <div class="personalEl row align-items-center" id="personal-interests" width=70%>
+        <div class="personalEl row align-items-center" id="personal-experiences" width=70%>
             <div class=" row row text-center py-4">
-                <h1 class="h1">My Interests</h1>
-                <p class="p">My personal interests. My personal interests. My personal interests. My personal interests. My personal interests. My personal interests. </p>
+                <h1 class="h1">My Experiences</h1>
+                <p class="p">My personal experiences. My personal experiences. My personal experiences. My personal experiences. My personal experiences. My personal experiences. </p>
             </div>
         </div>
     </div>
@@ -147,7 +147,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Foodio</h5>
                             <p class="card-text">A full-stack web application built with the MEN Stack.</p>
-                            <a href="#" class="btn btn-dark">Have a peek</a>
+                            <a href="#" class="btn btn-dark">Discover more</a>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Some App</h5>
                             <p class="card-text">A full-stack web application built with the MERN Stack.</p>
-                            <a href="#" class="btn btn-dark">Discover more</a>
+                            <a href="#" class="btn btn-dark">Take a peek</a>
                         </div>
                     </div>
                 </div>
@@ -225,10 +225,22 @@
                         <div class="card-body">
                             <h5 class="card-title">Camping Trailer</h5>
                             <p class="card-text">A fully kitted towing trailer for off-grid, wild camping.</p>
-                            <a href="#" class="btn btn-dark">Have a peek</a>
+                            <a href="#" class="btn btn-dark">Take a peek</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Echo Festival</h5>
+                            <p class="card-text">A festival in the paradise of the Croatian coast...</p>
+                            <a href="#" class="btn btn-dark">Have a goosey gander</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>  
                 
         </div>   
@@ -248,13 +260,13 @@
         const professionalSkillsBtnEl = document.getElementById("professional-skills-button")
         const professionalProjectsBtnEl = document.getElementById("professional-projects-button")
         const personalAboutBtnEl = document.getElementById("personal-about-button")
-        const personalInterestsBtnEl = document.getElementById("personal-interests-button")
+        const personalExperiencesBtnEl = document.getElementById("personal-experiences-button")
         const personalProjectsBtnEl = document.getElementById("personal-projects-button")
         const professionalAboutEl = document.getElementById("professional-about")
         const professionalSkillsEl = document.getElementById("professional-skills")
         const professionalProjectsEl = document.getElementById("professional-projects")
         const personalAboutEl = document.getElementById("personal-about")
-        const personalInterestsEl = document.getElementById("personal-interests")
+        const personalExperiencesEl = document.getElementById("personal-experiences")
         const personalProjectsEl = document.getElementById("personal-projects")
     
         window.onload = function hideElements() {
@@ -265,7 +277,7 @@
                 })
                 personalAboutBtnEl.setAttribute('selected', 'true')
                 personalAboutEl.style.display = ''
-                personalInterestsEl.style.display = 'none'
+                personalExperiencesEl.style.display = 'none'
                 personalProjectsEl.style.display = 'none'
 
             } else {
@@ -292,7 +304,7 @@
                 personalAboutBtnEl.setAttribute('selected', 'true')
                 professionalAboutBtnEl.setAttribute('selected', 'false')
                 personalAboutEl.style.display = ''
-                personalInterestsEl.style.display = 'none'
+                personalExperiencesEl.style.display = 'none'
                 personalProjectsEl.style.display = 'none'
             } else {
                 console.log("toggle is checked to professional")
@@ -345,15 +357,15 @@
             deselectAllNavButtonEls()
             personalAboutBtnEl.setAttribute('selected', 'true')
             personalAboutEl.style.display = ''
-            personalInterestsEl.style.display = 'none'
+            personalExperiencesEl.style.display = 'none'
             personalProjectsEl.style.display = 'none'
         }
 
-        personalInterestsBtnEl.onclick = function() {
+        personalExperiencesBtnEl.onclick = function() {
             deselectAllNavButtonEls()
-            personalInterestsBtnEl.setAttribute('selected', 'true')
+            personalExperiencesBtnEl.setAttribute('selected', 'true')
             personalAboutEl.style.display = 'none'
-            personalInterestsEl.style.display = ''
+            personalExperiencesEl.style.display = ''
             personalProjectsEl.style.display = 'none'
         }
 
@@ -361,7 +373,7 @@
             deselectAllNavButtonEls()
             personalProjectsBtnEl.setAttribute('selected', 'true')
             personalAboutEl.style.display = 'none'
-            personalInterestsEl.style.display = 'none'
+            personalExperiencesEl.style.display = 'none'
             personalProjectsEl.style.display = ''
         }
         
