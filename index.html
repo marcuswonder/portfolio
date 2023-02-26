@@ -10,41 +10,54 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark fixed-top first-nav">
-        <a href="#" class="flex-grow-1 px-2">
-            <img src="./public/MS Icon - Grey Simple.png" width="35px" height="35px" alt="Link to go Home" class="nav-link link-light">
-        </a>
-        <a href="./public/2023-02 - Marcus Smith Software Engineer Curriculum Vitae.pdf" target=”_blank” class="px-3 btn link-light fw-bold">Resume</a>
-        <a href="https://github.com/marcuswonder" target=”_blank” class="px-3">
-            <img src="./public/GitHub_Logo_White.png" height="25px" alt="Link to Marcus Smith's Github" class="nav-link link-light shadow-2-strong">
-        </a>
-        <a href="https://www.linkedin.com/in/marcusbrucesmith/" target=”_blank” class="px-3">
-            <img src="./public/LI-Logo-White.png" height=18px" alt="Link to Marcus Smith's LinkedIn" class="nav-link link-light">
-        </a>
-        <a href="/#contact" class="link-light px-3"><svg xmlns="http://www.w3.org/2000/svg" alt="Link to Marcus Smith's Contact Form" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 17">
-            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
-        </a>
-    </nav>
-
-
-   
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- Main & Sub Navs-->
+    
     <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark fixed-top first-nav">
+                <a href="#" class="flex-grow-1 px-2">
+                    <img src="./public/MS Icon - Grey Simple.png" width="35px" height="35px" alt="Link to go Home" class="nav-link link-light">
+                </a>
+                <a href="./public/2023-02 - Marcus Smith Software Engineer Curriculum Vitae.pdf" target=”_blank” class="px-3 btn link-light fw-bold">Resume</a>
+                <a href="https://github.com/marcuswonder" target=”_blank” class="px-3">
+                    <img src="./public/GitHub_Logo_White.png" height="25px" alt="Link to Marcus Smith's Github" class="nav-link link-light shadow-2-strong">
+                </a>
+                <a href="https://www.linkedin.com/in/marcusbrucesmith/" target=”_blank” class="px-3">
+                    <img src="./public/LI-Logo-White.png" height=18px" alt="Link to Marcus Smith's LinkedIn" class="nav-link link-light">
+                </a>
+                <a href="/#contact" class="link-light px-3"><svg xmlns="http://www.w3.org/2000/svg" alt="Link to Marcus Smith's Contact Form" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 17">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+                </a>
+            </nav>
+        </div>
         <div class="row">
             <nav class="navbar navbar-expand fixed-top navbar-dark bg-light justify-content-center second-nav mt-5">
                 <div class="col-3 text-end">
-                    <a class="nav-link link-dark px-3" href="#">professional</a>
+                    <a class="nav-link link-dark px-3 toggle-slct" id="professional-toggle">professional</a>
                 </div>
                 <div class="col-md-auto px-2">
                     <div class="form-check form-switch d-flex justify-content-center">
-                        <input class="form-check-input px-3" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                        <input class="form-check-input toggle-slct px-3" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                     </div>
                 </div>
                 <div class="col-3 text-start">
-                    <a class="nav-link link-dark px-3" href="#" width="88px">personal</a>
+                    <a class="nav-link link-dark px-3 toggle-slct" id="personal-toggle">personal</a>
                 </div>
             </nav>
         </div>
     </div>
+
+
+
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- Header with Image & Subtitles-->
 
     <div class="container">
         <div class="row align-items-center" style="height:auto;width:100%;">
@@ -62,6 +75,13 @@
         </div>
     </div>
 
+
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- Secondary Professional & Personal Navs -->
+    
     <div class="container professionalEl professional-nav">
         <div class="row">
             <nav class="navbar navbar-expand-lg bg-dark sticky-top third-nav justify-content-center">
@@ -97,6 +117,14 @@
         </div>
     </div>
     
+
+
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- Professional and Personal About Me -->
+    
     <div class="container bg-">
         <div class="professionalEl row align-items-center" id="professional-about" width=70%>
             <div class="row text-center py-4">
@@ -120,40 +148,55 @@
         </div>
     </div>
 
+
+
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- Professional Skills and Personal Experiences -->
+    
     <div class="container bg-">
         <div class="professionalEl row align-items-center justify-content-center" id="professional-skills" width=70%>
             <div class="row text-center py-4">
                 <h1 class="h1">My Skills</h1>
-                <p class="p">My professional skills. My professional skills. My professional skills. My professional skills. My professional skills. My professional skills. </p>
+                <p class="p">Throughout my career I have accumulated a number of self-taught skills, working with established software and by leveraging my Excel skills to design functional, resilient and long-lasting business systems for a range of organisations.
+                    <br>
+                    <br>
+                    My training as a full-stack web developer in 2022 has provided me with a improved arsenal of technical skills that I can now deploy in any professional situation. 
+                    <br>
+                    <br>
+                    Click on any of the cards below to find out more.
+                </p>
             </div>
 
             <div class="row p-3 justify-content-center">
                 <div class="col-lg-4 col-md-4 col-sm-6 row text-center p-3">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <div class="card-body">
+                            <img src="public/HTML, CSS & JS.png" class="card-img-top p-3" alt="...">
                             <h4 class="h4 card-title">HTML, CSS, JavaScript</h4>
                             <p class="p">Building basic websites</p>
-                            <a href="#" class="btn btn-dark">See an Example</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 row text-center p-3">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <div class="card-body">
+                            <img src="public/MEN Stack.png" class="card-img-top p-3" alt="...">
                             <h4 class="h4 card-title">MEN Stack</h4>
                             <p class="p">Building full-stack web apps</p>
-                            <a href="#" class="btn btn-dark">See an Example</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 row text-center p-3">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <div class="card-body">
+                            <img src="public/MERN Stack.png" class="card-img-top p-3" alt="...">
                             <h4 class="h4 card-title">MERN Stack</h4>
                             <p class="p">Building full-stack web apps</p>
-                            <a href="#" class="btn btn-dark">See an Example</a>
                         </div>
                     </div>
                 </div>
@@ -161,31 +204,31 @@
 
             <div class="row p-3 justify-content-center">
                 <div class="col-lg-4 col-md-4 col-sm-6 row text-center p-3">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <div class="card-body">
+                            <img src="public/Django with Python.png" class="card-img-top p-3" alt="...">
                             <h4 class="card-title">Django with Python</h4>
                             <p class="p">Building full-stack web apps</p>
-                            <a href="#" class="btn btn-dark">See an Example</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 row text-center p-3">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <div class="card-body">
+                            <img src="public/Excel.png" class="card-img-top p-3" alt="...">
                             <h4 class="h4 card-title">Excel</h4>
                             <p class="p">Budgeting, analysis and reporting</p>
-                            <a href="#" class="btn btn-dark">See an Example</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 row text-center p-3">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <div class="card-body">
+                            <img src="public/Systems.png" class="card-img-top p-3" alt="...">
                             <h4 class="h4 card-title">Systems Design</h4>
                             <p class="p">Business logic design and implementation</p>
-                            <a href="#" class="btn btn-dark">See an Example</a>
                         </div>
                     </div>
                 </div>
@@ -204,7 +247,7 @@
 
             <div class="row p-3">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">West African Roadmen</h5>
@@ -215,7 +258,7 @@
                 </div>
             
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Our time in Sierra Leone</h5>
@@ -226,7 +269,7 @@
                 </div>
             
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">South American Stories</h5>
@@ -249,7 +292,7 @@
                 
             <div class="row p-3">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">This Portfolio</h5>
@@ -260,7 +303,7 @@
                 </div>
             
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Foodio</h5>
@@ -271,7 +314,7 @@
                 </div>
             
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Some App</h5>
@@ -283,7 +326,7 @@
             </div>  
             <div class="row p-3">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Blackjack</h5>
@@ -294,7 +337,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">PSP Skills Report</h5>
@@ -305,7 +348,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Student Tracking Report</h5>
@@ -319,6 +362,14 @@
         
         
 
+
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- Professional and Personal Project Cards -->
+    
+
         <div class="personalEl row align-items-center" id="personal-projects" width=70%>
             <div class="row text-center py-4">
                 <h1 class="h1">My Projects</h1>
@@ -327,7 +378,7 @@
 
             <div class="row p-3">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Portraits of a Family</h5>
@@ -338,7 +389,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Echo Festival</h5>
@@ -349,7 +400,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">The Pursuit of Silence</h5>
@@ -360,7 +411,7 @@
                 </div>
         
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Camping Trailer</h5>
@@ -371,7 +422,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">The Pool</h5>
@@ -396,7 +447,7 @@
 
             <div class="row p-3">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Testimonial 1</h5>
@@ -407,7 +458,7 @@
                 </div>
             
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Testimonial 2</h5>
@@ -418,7 +469,7 @@
                 </div>
             
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Testimonial 3</h5>
@@ -430,7 +481,7 @@
             </div>  
             <div class="row p-3">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Testimonial 1</h5>
@@ -441,7 +492,7 @@
                 </div>
             
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Testimonial 2</h5>
@@ -452,7 +503,7 @@
                 </div>
             
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" id="card-customizations">
                         <img src="https://picsum.photos/1000" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Testimonial 3</h5>
@@ -466,13 +517,25 @@
     </div>
     
     
-    
-
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- All Projects -->
 
 </body>
+
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- Script -->
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script>
+        const professionalToggleSlctEl = document.getElementById('professional-toggle')
         const toggleEl = document.getElementById('flexSwitchCheckDefault')
+        const personalToggleSlctEl = document.getElementById('personal-toggle')
 
         const personalEl = Array.from(document.getElementsByClassName("personalEl"))
         const professionalEl = Array.from(document.getElementsByClassName("professionalEl"))
@@ -499,7 +562,6 @@
         const personalAboutEl = document.getElementById("personal-about")
         const personalExperiencesEl = document.getElementById("personal-experiences")
         const personalProjectsEl = document.getElementById("personal-projects")
-
 
         function deselectAllNavButtons() {
             navButtons.forEach(function(btns) {
@@ -535,8 +597,29 @@
             }
         }
 
+        professionalToggleSlctEl.addEventListener('click', function() {
+            if(toggleEl.checked === false ) {
+                toggleEl.checked = true    
+            } else if(toggleEl.checked === true ) {
+                toggleEl.checked = false    
+            }
+            handleToggleState()
+        })
 
         toggleEl.addEventListener('click', function() {
+            handleToggleState()
+        })
+        
+        personalToggleSlctEl.addEventListener('click', function() {
+            if(toggleEl.checked === false ) {
+                toggleEl.checked = true    
+            } else if(toggleEl.checked === true ) {
+                toggleEl.checked = false    
+            }
+            handleToggleState()
+        })
+
+        function handleToggleState() {
             if(toggleEl.checked === true) {
                 console.log("toggle is checked to personal")
                 deselectAllNavButtons()
@@ -554,7 +637,7 @@
                 professionalAboutEl.style.display = ''
 
             }
-        })
+        }
 
         function deselectAllNavButtonEls() {
             let NavButtonEls = Array.from(document.querySelectorAll(".nav-button"))
