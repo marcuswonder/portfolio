@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/main.css">
+    <script src="/main.js"></script>
 </head>
 <body>
     
@@ -59,9 +60,9 @@
     <!-- . -->
     <!-- Header with Image & Subtitles-->
 
-    <div class="container">
+    <div class="container" id="header">
         <div class="row align-items-center" style="height:auto;width:100%;">
-            <div class="col align-items-end d-none d-md-block" class="header-h1" style="padding-top:5%" >
+            <div class="col align-items-end d-none d-md-block" style="padding-top:5%" >
                 <p class="h1 text-end pt-md-5">professional</p>
                 <p class="p text-end">Full Stack web developer with experience across the MERN stack</p>
             </div>
@@ -82,38 +83,40 @@
     <!-- . -->
     <!-- Secondary Professional & Personal Navs -->
     
-    <div class="container professionalEl professional-nav">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg bg-dark sticky-top third-nav justify-content-center">
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
-                    <button type="button" class="btn btn-dark border-light btn-sm nav-button professional-button" id="professional-about-button">about me</button>
+    <div class="sub-nav" id="sub-nav">
+        <div class="container professionalEl professional-nav">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-dark sticky-top third-nav justify-content-center">
+                    <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                        <button type="button" class="btn btn-dark border-light btn-sm nav-button professional-button" id="professional-about-button">about me</button>
+                        </div>
+                    <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                        <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="professional-skills-button">skills</button>
+                    </div> 
+                    <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                        <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="professional-projects-button">projects</button>
                     </div>
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
-                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="professional-skills-button">skills</button>
-                </div> 
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
-                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="professional-projects-button">projects</button>
-                </div>
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
-                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="professional-testimonials-button">testimonials</button>
-                </div>
-            </nav>
+                    <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                        <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="professional-testimonials-button">testimonials</button>
+                    </div>
+                </nav>
+            </div>
         </div>
-    </div>
-    
-    <div class="container personalEl personal-nav">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg bg-dark sticky-top third-nav justify-content-center">
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
-                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-about-button">about me</button>
-                </div>
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
-                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-experiences-button">experiences</button>
-                </div>
-                <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
-                    <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-projects-button">projects</button>
-                </div>
-            </nav>
+        
+        <div class="container personalEl personal-nav">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg bg-dark sticky-top third-nav justify-content-center">
+                    <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                        <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-about-button">about me</button>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                        <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-experiences-button">experiences</button>
+                    </div>
+                    <div class="col-lg-2 col-sm-3 text-center nav-link link-light px-3">
+                        <button type="button" class="btn btn-dark border-light btn-sm nav-button" id="personal-projects-button">projects</button>
+                    </div>
+                </nav>
+            </div>
         </div>
     </div>
     
@@ -270,7 +273,7 @@
                         <div class="card-body">
                             <h5 class="card-title">South American Stories</h5>
                             <p class="card-text">Excerpts from a teenage travel journal and blog from South America.</p>
-                            <a href="#" class="btn btn-dark">Try not to cringe</a>
+                            <p class="btn btn-dark">Try not to cringe</p>
                         </div>
                     </div>
                 </div>
@@ -278,6 +281,12 @@
 
         </div>
     </div>
+
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- Professional Project Cards -->
 
     <div class="container bg-">
         <div class="professionalEl row align-items-center" id="professional-projects" width=70%>
@@ -298,7 +307,7 @@
                         <div class="card-body">
                             <h5 class="card-title">This Portfolio</h5>
                             <p class="card-text">A simple website built with HTML, Javascript and Bootstrap.</p>
-                            <a href="#" class="btn btn-dark">Take a look</a>
+                            <a class="btn btn-dark" id="thisPortfolioBtnEl">Take a look</a>
                         </div>
                     </div>
                 </div>
@@ -368,7 +377,7 @@
     <!-- . -->
     <!-- . -->
     <!-- . -->
-    <!-- Professional and Personal Project Cards -->
+    <!-- Personal Project Cards -->
     
 
         <div class="personalEl row align-items-center" id="personal-projects" width=70%>
@@ -524,54 +533,109 @@
     <!-- . -->
     <!-- All Projects -->
 
-    <div class="container">
-        <div class="row professional-project this-porfolio bg-light align-items-center justify-content-center">
-            <h1 class="h1">This Portfolio</h1>
-            <h4 class="h4">A one-page website using only HTML, JavaScript, CSS (and Bootstrap)</h4>
-            <br><br>
-            <p class="p">I set out to test my web development fundamentals by building a one-page website, principally because I like this modern website design and a prortfolio would not require any server-side communication that would come about by a single page application built through React.js.</p>
-        </div>
+    <div class="projects" id="projects">
+  
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- Professional Projects -->
 
-        <div class="row p-3">
-            <h2 class="h2">Takeaways</h2>
-            <div class="col-lg-4 col-md-6 col-sm-12 p-2">
-                <div class="card p-1">
-                    <div class="card-body">
-                        <h5 class="card-title">Favourite Features</h5>
-                        <p class="card-text">This is a very simple site, but the DOM manipulation was probably the most technical aspect.
-                            <br><br>
-                            My favourite feature of the site is the design - I like how a viewer can switch between professional and personal, and get a feeling for both sides of my life.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 p-2">
-                <div class="card p-1">
-                    <div class="card-body">
-                        <h5 class="card-title">Biggest Blocker</h5>
-                        <p class="card-text">There were no substantial blockers really, but managing the state changes was certainly the most demanding aspect of designing this site.
-                            <br><br>
-                            Secondly, it was my first time using Bootrap to style the site. I can see the advantages, but I also do like to be in control...</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row p-3">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" id="card-customizations">
-                    <img src="/public/github-mark.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">View My Portfolio</h5>
-                        <p class="card-text">You're already here! 🤪</p>
-                        <a href="#" class="btn btn-dark">Check the link works at least!</a>
-                    </div>
-                </div>
-            </div>
-        </div>
         
+        <div class="professional-projects">
+    
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- This Portfolio -->
+
+            <div class="professional-project professionalEl container bg-dark mt-3" id="this-porfolio">
+                <div class="row  align-items-center justify-content-center p-3">
+                    <h1 class="h1 text-white pt-3">This Portfolio</h1>
+                    <h4 class="h4 text-white">A one-page website using only HTML, JavaScript, CSS (and Bootstrap)</h4>
+                    <br><br>
+                    <p class="p text-white">I set out to test my web development fundamentals by building a one-page website, principally because I like this modern website design and a prortfolio would not require any server-side communication that would come about by a single page application built through React.js.</p>
+                </div>
+
+                <img src="/public//portfolio.gif" class="card-img-top" alt="...">
+
+                <div class="row">
+                    <h2 class="h2 pt-5 text-white p-3">Takeaways</h2>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card p-1 bg-dark m-3 p-2 border-light">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Favourite Feature</h5>
+                                <p class="card-text text-white">This is a very simple site, but the DOM manipulation was probably the most technical aspect.</p>
+                                <p class="card-text text-white">My favourite feature is the one-page design, facilitated by DOM manipulations - I like that a user can get a visual and content-based feeling for both sides of my life.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                        <div class="card p-1 bg-dark m-3 p-2 border-light">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Biggest Blocker</h5>
+                                <p class="card-text text-white">There were no substantial blockers, but managing the state changes was certainly the most demanding aspect of designing this site.</p>
+                                <p class="card-text text-white">It was also my first time using Bootrap to style the site. I can see the advantages of using a CSS framework like this but I also do like to be in control...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                        <div class="card p-1 bg-dark m-3 p-2 border-light">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Key Takeaways</h5>
+                                <p class="card-text text-white">One page websites can be built with HTML and JavaScript, but the sites to get a little unruly as they get bigger. </p>
+                                <p class="card-text text-white">In future, I may have chosen to use another platform to design this site, or to have taken a multi-page approach when using HTML, CSS and Javascript.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card p-1 bg-dark border-light">
+                            <img src="/public/MS Icon - Grey Simple.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">View My Portfolio</h5>
+                                <p class="card-text text-white">You're already here! 🤪</p>
+                                <a class="p text-white" href="#" class="btn btn-light text-white">Check the link works at least!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card p-1 bg-dark border-light">
+                            <img src="/public/github-mark-white.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">View My Code</h5>
+                                <p class="card-text text-white">See my code, commits and more!</p>
+                                <a class="p text-white" href="https://github.com/marcuswonder/portfolio" target="blank" class="btn btn-light">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </div>
+
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- Personal Projects -->
+
+
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- . -->
+    <!-- [Personal Project 1] -->
+
+</div>
 
 </body>
 
@@ -583,9 +647,13 @@
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script>
+             
         const professionalToggleSlctEl = document.getElementById('professional-toggle')
         const toggleEl = document.getElementById('flexSwitchCheckDefault')
         const personalToggleSlctEl = document.getElementById('personal-toggle')
+
+        const headerEl = document.getElementById('header')
+        const subNavEl = document.getElementById('sub-nav')
 
         const personalEl = Array.from(document.getElementsByClassName("personalEl"))
         const professionalEl = Array.from(document.getElementsByClassName("professionalEl"))
@@ -612,6 +680,9 @@
         const personalAboutEl = document.getElementById("personal-about")
         const personalExperiencesEl = document.getElementById("personal-experiences")
         const personalProjectsEl = document.getElementById("personal-projects")
+
+        const thisPortfolioProProjectBtn = document.getElementById("thisPortfolioBtnEl")
+        const thisPortfolioProProject = document.getElementById("this-porfolio")
 
         function deselectAllNavButtons() {
             navButtons.forEach(function(btns) {
@@ -671,86 +742,98 @@
 
         function handleToggleState() {
             if(toggleEl.checked === true) {
-                console.log("toggle is checked to personal")
-                deselectAllNavButtons()
-                hideAllConditionalEls()
-                personalNav.style.display = ''
+                resetToPersonalPage()
                 personalAboutBtnEl.setAttribute('selected', 'true')
                 personalAboutEl.style.display = ''
-
             } else {
-                console.log("toggle is checked to professional")
-                deselectAllNavButtons()
-                hideAllConditionalEls()
-                professionalNav.style.display = ''
+                resetToProfessionalPage()
                 professionalAboutBtnEl.setAttribute('selected', 'true')
                 professionalAboutEl.style.display = ''
-
             }
         }
+
+        function resetToTopNavBarsOnly() {
+            deselectAllNavButtons()
+            hideAllConditionalEls()
+            headerEl.style.display = 'none'
+        }
+
+        function resetToProfessionalPage() {
+            deselectAllNavButtons()
+            hideAllConditionalEls()
+            professionalNav.style.display = ''
+        }
+
+        function resetToPersonalPage() {
+            deselectAllNavButtons()
+            hideAllConditionalEls()
+            personalNav.style.display = ''
+        }
+
+      
 
         function deselectAllNavButtonEls() {
             let NavButtonEls = Array.from(document.querySelectorAll(".nav-button"))
             NavButtonEls.forEach(function(el) {
-                    el.setAttribute('selected', 'false')
+                el.setAttribute('selected', 'false')
             })
         }
         
         professionalAboutBtnEl.onclick = function() {
-            deselectAllNavButtons()
-            hideAllConditionalEls()
-            professionalNav.style.display = ''
+            resetToProfessionalPage()
             professionalAboutBtnEl.setAttribute('selected', 'true')
             professionalAboutEl.style.display = ''
         }
 
         professionalSkillsBtnEl.onclick = function() {
-            deselectAllNavButtons()
-            hideAllConditionalEls()
-            professionalNav.style.display = ''
+            resetToProfessionalPage()
             professionalSkillsBtnEl.setAttribute('selected', 'true')
             professionalSkillsEl.style.display = ''
         }
 
         professionalProjectsBtnEl.onclick = function() {
-            deselectAllNavButtons()
-            hideAllConditionalEls()
-            professionalNav.style.display = ''
+            resetToProfessionalPage()
             professionalProjectsBtnEl.setAttribute('selected', 'true')
             professionalProjectsEl.style.display = ''
         }
 
         professionalTestimonialsBtnEl.onclick = function() {
-            deselectAllNavButtons()
-            hideAllConditionalEls()
-            professionalNav.style.display = ''
+            resetToProfessionalPage()
             professionalTestimonialsBtnEl.setAttribute('selected', 'true')
             professionalTestimonialsEl.style.display = ''
         }
 
         personalAboutBtnEl.onclick = function() {
-            deselectAllNavButtons()
-            hideAllConditionalEls()
-            personalNav.style.display = ''
+            resetToProfessionalPage()
             personalAboutBtnEl.setAttribute('selected', 'true')
             personalAboutEl.style.display = ''
         }
 
         personalExperiencesBtnEl.onclick = function() {
-            deselectAllNavButtons()
-            hideAllConditionalEls()
-            personalNav.style.display = ''
+            resetToPersonalPage()
             personalExperiencesBtnEl.setAttribute('selected', 'true')
             personalExperiencesEl.style.display = ''
         }
 
         personalProjectsBtnEl.onclick = function() {
-            deselectAllNavButtons()
-            hideAllConditionalEls()
-            personalNav.style.display = ''
+            resetToPersonalPage()
             personalProjectsBtnEl.setAttribute('selected', 'true')
             personalProjectsEl.style.display = ''
         }
+
+
+        // 
+        // 
+        // 
+        // Hide Header Element when showing  below
+
+        thisPortfolioProProjectBtn.onclick = function() {
+            resetToProfessionalPage()
+            thisPortfolioProProject.style.display = ''
+        }
+
+
+
         
     </script>
 
