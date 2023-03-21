@@ -31,8 +31,19 @@ const personalAboutEl = document.getElementById("personal-about")
 const personalExperiencesEl = document.getElementById("personal-experiences")
 const personalProjectsEl = document.getElementById("personal-projects")
 
+
+const cancanProProjectBtn = document.getElementById("cancanBtnEl")
+const cancanProProject = document.getElementById("cancan")
+
+const foodioProProjectBtn = document.getElementById("foodioBtnEl")
+const foodioProProject = document.getElementById("foodio")
+
 const thisPortfolioProProjectBtn = document.getElementById("thisPortfolioBtnEl")
 const thisPortfolioProProject = document.getElementById("this-porfolio")
+
+const blackjackProProjectBtn = document.getElementById("blackjackBtnEl")
+const blackjackProProject = document.getElementById("blackjack")
+
 
 function deselectAllNavButtons() {
     navButtons.forEach(function(btns) {
@@ -177,7 +188,23 @@ personalProjectsBtnEl.onclick = function() {
 // 
 // Hide Header Element when showing  below
 
+
+cancanProProjectBtn.onclick = function() {
+    resetToProfessionalPage()
+    cancanProProject.style.display = ''
+}
+
+foodioProProjectBtn.onclick = function() {
+    resetToProfessionalPage()
+    foodioProProject.style.display = ''
+}
+
 thisPortfolioProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     thisPortfolioProProject.style.display = ''
+}
+
+blackjackProProjectBtn.onclick = function() {
+    resetToProfessionalPage()
+    blackjackProProject.style.display = ''
 }
