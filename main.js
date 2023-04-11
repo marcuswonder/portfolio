@@ -44,6 +44,9 @@ const thisPortfolioProProject = document.getElementById("this-porfolio")
 const blackjackProProjectBtn = document.getElementById("blackjackBtnEl")
 const blackjackProProject = document.getElementById("blackjack")
 
+const growSaloneProProjectBtn = document.getElementById("growSaloneBtnEl")
+const growSaloneProProject = document.getElementById("growSalone")
+
 
 function deselectAllNavButtons() {
     navButtons.forEach(function(btns) {
@@ -207,4 +210,9 @@ thisPortfolioProProjectBtn.onclick = function() {
 blackjackProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     blackjackProProject.style.display = ''
+}
+
+growSaloneProProjectBtn.onclick = function() {
+    resetToProfessionalPage()
+    growSaloneProProject.style.display = ''
 }
