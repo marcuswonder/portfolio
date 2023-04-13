@@ -195,24 +195,41 @@ personalProjectsBtnEl.onclick = function() {
 cancanProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     cancanProProject.style.display = ''
+    scrollToSubNav()
 }
 
 foodioProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     foodioProProject.style.display = ''
+    scrollToSubNav()
 }
 
 thisPortfolioProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     thisPortfolioProProject.style.display = ''
+    scrollToSubNav()
 }
 
 blackjackProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     blackjackProProject.style.display = ''
+    scrollToSubNav()
 }
 
 growSaloneProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     growSaloneProProject.style.display = ''
+    scrollToSubNav()
 }
+
+
+
+
+
+
+
+
+
+function scrollToSubNav() {
+    document.getElementById("sub-nav").scrollIntoView();
+  }
