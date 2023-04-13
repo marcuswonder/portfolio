@@ -233,3 +233,13 @@ growSaloneProProjectBtn.onclick = function() {
 function scrollToSubNav() {
     document.getElementById("sub-nav").scrollIntoView();
   }
+
+// function showGrowSaloneOne () {
+//     document.getElementById('grow-salone-button-1').addEventListener('click', function() {
+//         document.getElementById('collapseOne').collapse('toggle')
+//     })
+// }
+
+
+//   'collapseOne'
+//   'grow-salone-button-1'
