@@ -47,6 +47,9 @@ const blackjackProProject = document.getElementById("blackjack")
 const growSaloneProProjectBtn = document.getElementById("growSaloneBtnEl")
 const growSaloneProProject = document.getElementById("growSalone")
 
+const educAidProProjectBtn = document.getElementById("educAidBtnEl")
+const educAidProProject = document.getElementById("educAid")
+
 
 function deselectAllNavButtons() {
     navButtons.forEach(function(btns) {
@@ -222,6 +225,12 @@ growSaloneProProjectBtn.onclick = function() {
     scrollToSubNav()
 }
 
+educAidProProjectBtn.onclick = function() {
+    resetToProfessionalPage()
+    educAidProProject.style.display = ''
+    scrollToSubNav()
+}
+
 
 
 
@@ -232,14 +241,25 @@ growSaloneProProjectBtn.onclick = function() {
 
 function scrollToSubNav() {
     document.getElementById("sub-nav").scrollIntoView();
-  }
+}
 
-// function showGrowSaloneOne () {
-//     document.getElementById('grow-salone-button-1').addEventListener('click', function() {
-//         document.getElementById('collapseOne').collapse('toggle')
-//     })
-// }
+function scrollToGrowSaloneAccordion() {
+    document.getElementById("startOfPSP").scrollIntoView();
+}
 
+const growSaloneAccordionEl1 = document.getElementById("growSaloneAccordion1")
+const growSaloneAccordionEl2 = document.getElementById("growSaloneAccordion2")
+const growSaloneAccordionEl3 = document.getElementById("growSaloneAccordion3")
 
-//   'collapseOne'
-//   'grow-salone-button-1'
+growSaloneAccordionEl1.onclick = function() {
+    console.log("growSaloneAccordionEl1 hit")
+    scrollToGrowSaloneAccordion()
+}
+
+growSaloneAccordionEl2.onclick = function() {
+    scrollToGrowSaloneAccordion()
+}
+
+growSaloneAccordionEl3.onclick = function() {
+    scrollToGrowSaloneAccordion()
+}
