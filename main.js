@@ -5,6 +5,9 @@ const personalToggleSlctEl = document.getElementById('personal-toggle')
 const headerEl = document.getElementById('header')
 const subNavEl = document.getElementById('sub-nav')
 
+const professionalHeadshotEl = document.getElementById('professionalHeadshot')
+const personalHeadshotEl = document.getElementById('personalHeadshot')
+
 const personalEl = Array.from(document.getElementsByClassName("personalEl"))
 const professionalEl = Array.from(document.getElementsByClassName("professionalEl"))
 
@@ -87,19 +90,21 @@ function hideAllConditionalEls() {
 
 window.onload = function hideElements() {
     if(toggleEl.checked === true) {
-        console.log("toggle is checked to personal")
+        resetToPersonalPage()
         deselectAllNavButtons()
         hideAllConditionalEls()
         personalNav.style.display = ''
         personalAboutEl.style.display = ''
+        personalHeadshotEl.style.display = ''
 
     } else {
-        console.log("toggle is checked to professional")
+        resetToProfessionalPage()
         deselectAllNavButtons()
         hideAllConditionalEls()
         professionalNav.style.display = ''
         professionalAboutBtnEl.setAttribute('selected', 'true')
         professionalAboutEl.style.display = ''
+        professionalHeadshotEl.style.display = ''
     }
 }
 
@@ -147,12 +152,14 @@ function resetToProfessionalPage() {
     deselectAllNavButtons()
     hideAllConditionalEls()
     professionalNav.style.display = ''
+    professionalHeadshotEl.style.display = ''
 }
 
 function resetToPersonalPage() {
     deselectAllNavButtons()
     hideAllConditionalEls()
     personalNav.style.display = ''
+    personalHeadshotEl.style.display = ''
 }
 
 
@@ -189,7 +196,7 @@ professionalTestimonialsBtnEl.onclick = function() {
 }
 
 personalAboutBtnEl.onclick = function() {
-    resetToProfessionalPage()
+    resetToPersonalPage()
     personalAboutBtnEl.setAttribute('selected', 'true')
     personalAboutEl.style.display = ''
 }
