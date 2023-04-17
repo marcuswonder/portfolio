@@ -53,6 +53,21 @@ const educAidProProject = document.getElementById("educAid")
 const roadmenExperienceBtn = document.getElementById("roadmenBtnEl")
 const roadmenExperience = document.getElementById("roadmen")
 
+const saloneExperienceBtn = document.getElementById("saloneBtnEl")
+const saloneExperience = document.getElementById("salone")
+
+const sasExperienceBtn = document.getElementById("sasBtnEl")
+const sasExperience = document.getElementById("sas")
+
+const samuelBeckettPersonalProjectBtn = document.getElementById("beckettBtnEl")
+const samuelBeckettPersonalProject = document.getElementById("samuelBeckett")
+
+const echoFestivalPersonalProjectBtn = document.getElementById("echoFestivalBtnEl")
+const echoFestivalPersonalProject = document.getElementById("echoFestival")
+
+const growSaloneFilmsPersonalProjectBtn = document.getElementById("growSaloneFilmsBtnEl")
+const growSaloneFilmsPersonalProject = document.getElementById("growSaloneFilms")
+
 
 function deselectAllNavButtons() {
     navButtons.forEach(function(btns) {
@@ -239,6 +254,42 @@ roadmenExperienceBtn.onclick = function() {
     roadmenExperience.style.display = ''
     scrollToSubNav()
 }
+
+saloneExperienceBtn.onclick = function() {
+    resetToPersonalPage()
+    saloneExperience.style.display = ''
+    scrollToSubNav()
+}
+
+sasExperienceBtn.onclick = function() {
+    resetToPersonalPage()
+    sasExperience.style.display = ''
+    scrollToSubNav()
+}
+
+growSaloneFilmsPersonalProjectBtn.onclick = function() {
+    resetToPersonalPage()
+    growSaloneFilmsPersonalProject.style.display = ''
+    scrollToSubNav()
+}
+
+echoFestivalPersonalProjectBtn.onclick = function() {
+    resetToPersonalPage()
+    echoFestivalPersonalProject.style.display = ''
+    scrollToSubNav()
+}
+
+samuelBeckettPersonalProjectBtn.onclick = function() {
+    resetToPersonalPage()
+    samuelBeckettPersonalProject.style.display = ''
+    scrollToSubNav()
+}
+
+
+
+
+
+
 
 
 
