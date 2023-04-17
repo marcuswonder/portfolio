@@ -50,6 +50,9 @@ const growSaloneProProject = document.getElementById("growSalone")
 const educAidProProjectBtn = document.getElementById("educAidBtnEl")
 const educAidProProject = document.getElementById("educAid")
 
+const roadmenExperienceBtn = document.getElementById("roadmenBtnEl")
+const roadmenExperience = document.getElementById("roadmen")
+
 
 function deselectAllNavButtons() {
     navButtons.forEach(function(btns) {
@@ -231,6 +234,12 @@ educAidProProjectBtn.onclick = function() {
     scrollToSubNav()
 }
 
+roadmenExperienceBtn.onclick = function() {
+    resetToPersonalPage()
+    roadmenExperience.style.display = ''
+    scrollToSubNav()
+}
+
 
 
 
@@ -263,3 +272,7 @@ growSaloneAccordionEl2.onclick = function() {
 growSaloneAccordionEl3.onclick = function() {
     scrollToGrowSaloneAccordion()
 }
+
+
+var myCarousel = document.querySelector('#roadmenCarouselOne')
+var carousel = new bootstrap.Carousel(myCarousel)
