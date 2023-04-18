@@ -3,6 +3,14 @@ button[selected="true"] {
   color: black    
 }
 
+.navbar {
+  height: 48px
+}
+
+.nav-link {
+  padding: 0;
+}
+
 .toggle-slct {
   cursor: pointer
 }
@@ -15,14 +23,9 @@ button[selected="true"] {
 }
 
 .carousel-portrait{
-  width:100%;
+  width:auto;
   max-height: 700px !important;
   object-fit:none;
-}
-
-.carousel-landscape{
-  width:100%;
-  margin: -100px 0px -100px 0px;
 }
 
 .carousel-control-next,
@@ -89,4 +92,10 @@ button[selected="true"] {
   margin-top: -3px;
   background: black;
   cursor: pointer;
+}
+
+
+.nav-button:focus {
+  background-color: white;
+  color: black;
 }
