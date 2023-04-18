@@ -1,3 +1,6 @@
+const pageContainerEl = document.getElementById('page-container')
+const loadingContainerEl = document.getElementById('loading-container')
+
 const professionalToggleSlctEl = document.getElementById('professional-toggle')
 const toggleEl = document.getElementById('flexSwitchCheckDefault')
 const personalToggleSlctEl = document.getElementById('personal-toggle')
@@ -71,6 +74,12 @@ const echoFestivalPersonalProject = document.getElementById("echoFestival")
 const growSaloneFilmsPersonalProjectBtn = document.getElementById("growSaloneFilmsBtnEl")
 const growSaloneFilmsPersonalProject = document.getElementById("growSaloneFilms")
 
+const echoLazyImagesEls = document.getElementsByClassName("echo-lazy")
+const roadmenLazyImagesEls = document.getElementsByClassName("roadmen-lazy")
+const sasLazyImagesEls = document.getElementsByClassName("sas-lazy")
+const saloneLazyImagesEls = document.getElementsByClassName("salone-lazy")
+const educAidLazyImagesEls = document.getElementsByClassName("educAid-lazy")
+
 
 function deselectAllNavButtons() {
     navButtons.forEach(function(btns) {
@@ -90,6 +99,8 @@ function hideAllConditionalEls() {
 
 window.onload = function hideElements() {
     if(toggleEl.checked === true) {
+        loadingContainerEl.style.display = 'none'
+        pageContainerEl.style.display = ''
         resetToPersonalPage()
         deselectAllNavButtons()
         hideAllConditionalEls()
@@ -98,6 +109,8 @@ window.onload = function hideElements() {
         personalHeadshotEl.style.display = ''
 
     } else {
+        loadingContainerEl.style.display = 'none'
+        pageContainerEl.style.display = ''
         resetToProfessionalPage()
         deselectAllNavButtons()
         hideAllConditionalEls()
@@ -254,24 +267,28 @@ educAidProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     educAidProProject.style.display = ''
     scrollToSubNav()
+    loadEducAidImages()
 }
 
 roadmenExperienceBtn.onclick = function() {
     resetToPersonalPage()
     roadmenExperience.style.display = ''
     scrollToSubNav()
+    loadRoadmenImages()
 }
 
 saloneExperienceBtn.onclick = function() {
     resetToPersonalPage()
     saloneExperience.style.display = ''
     scrollToSubNav()
+    loadSaloneImages()
 }
 
 sasExperienceBtn.onclick = function() {
     resetToPersonalPage()
     sasExperience.style.display = ''
     scrollToSubNav()
+    loadSasImages()
 }
 
 growSaloneFilmsPersonalProjectBtn.onclick = function() {
@@ -284,6 +301,7 @@ echoFestivalPersonalProjectBtn.onclick = function() {
     resetToPersonalPage()
     echoFestivalPersonalProject.style.display = ''
     scrollToSubNav()
+    loadEchoImages()
 }
 
 samuelBeckettPersonalProjectBtn.onclick = function() {
@@ -334,3 +352,33 @@ growSaloneAccordionEl3.onclick = function() {
 
 var myCarousel = document.querySelector('#roadmenCarouselOne')
 var carousel = new bootstrap.Carousel(myCarousel)
+
+function loadEchoImages() {
+    echoLazyImagesEls.foreach(function(el) {
+        el.setAttribute('loading', 'eager')
+    })
+}
+
+function loadRoadmenImages() {
+    roadmenLazyImagesEls.foreach(function(el) {
+        el.setAttribute('loading', 'eager')
+    })
+}
+
+function loadSasImages() {
+    sasLazyImagesEls.foreach(function(el) {
+        el.setAttribute('loading', 'eager')
+    })
+}
+
+function loadSaloneImages() {
+    saloneLazyImagesEls.foreach(function(el) {
+        el.setAttribute('loading', 'eager')
+    })
+}
+
+function loadEducAidImages() {
+    educAidLazyImagesEls.foreach(function(el) {
+        el.setAttribute('loading', 'eager')
+    })
+}

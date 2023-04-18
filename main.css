@@ -7,7 +7,7 @@ button[selected="true"] {
     cursor: pointer
 }
 
-
+/* carousel */
 
 .carousel-inner{
     width:100%;
@@ -31,7 +31,7 @@ button[selected="true"] {
 }
 
 
-
+/* Audio Player */
 
 html,
 body,
@@ -94,3 +94,9 @@ body,
 }
 
 
+/* #loading {
+  overflow: hidden;
+  transition-duration: 0.8s;
+  transition-property: transform;
+  transform: rotate(360deg);
+} */
