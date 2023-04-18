@@ -71,8 +71,8 @@ const samuelBeckettPersonalProject = document.getElementById("samuelBeckett")
 const echoFestivalPersonalProjectBtn = document.getElementById("echoFestivalBtnEl")
 const echoFestivalPersonalProject = document.getElementById("echoFestival")
 
-const growSaloneFilmsPersonalProjectBtn = document.getElementById("growSaloneFilmsBtnEl")
-const growSaloneFilmsPersonalProject = document.getElementById("growSaloneFilms")
+const educAidFilmsPersonalProjectBtn = document.getElementById("educAidFilmsBtnEl")
+const educAidFilmsPersonalProject = document.getElementById("educAidFilms")
 
 const echoLazyImagesEls = document.getElementsByClassName("echo-lazy")
 const roadmenLazyImagesEls = document.getElementsByClassName("roadmen-lazy")
@@ -291,10 +291,11 @@ sasExperienceBtn.onclick = function() {
     loadSasImages()
 }
 
-growSaloneFilmsPersonalProjectBtn.onclick = function() {
+educAidFilmsPersonalProjectBtn.onclick = function() {
     resetToPersonalPage()
-    growSaloneFilmsPersonalProject.style.display = ''
+    educAidFilmsPersonalProject.style.display = ''
     scrollToSubNav()
+    loadEducAidImages()
 }
 
 echoFestivalPersonalProjectBtn.onclick = function() {
@@ -309,18 +310,6 @@ samuelBeckettPersonalProjectBtn.onclick = function() {
     samuelBeckettPersonalProject.style.display = ''
     scrollToSubNav()
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -354,31 +343,31 @@ var myCarousel = document.querySelector('#roadmenCarouselOne')
 var carousel = new bootstrap.Carousel(myCarousel)
 
 function loadEchoImages() {
-    echoLazyImagesEls.foreach(function(el) {
-        el.setAttribute('loading', 'eager')
-    })
+    for (var i = 0; i < echoLazyImagesEls.length; i++) {
+        echoLazyImagesEls[i].loading = "eager"; 
+    }
 }
 
 function loadRoadmenImages() {
-    roadmenLazyImagesEls.foreach(function(el) {
-        el.setAttribute('loading', 'eager')
-    })
+    for (var i = 0; i < roadmenLazyImagesEls.length; i++) {
+        roadmenLazyImagesEls[i].loading = "eager"; 
+    }
 }
 
 function loadSasImages() {
-    sasLazyImagesEls.foreach(function(el) {
-        el.setAttribute('loading', 'eager')
-    })
+    for (var i = 0; i < sasLazyImagesEls.length; i++) {
+        sasLazyImagesEls[i].loading = "eager"; 
+    }
 }
 
 function loadSaloneImages() {
-    saloneLazyImagesEls.foreach(function(el) {
-        el.setAttribute('loading', 'eager')
-    })
+    for (var i = 0; i < saloneLazyImagesEls.length; i++) {
+        saloneLazyImagesEls[i].loading = "eager"; 
+    }
 }
 
 function loadEducAidImages() {
-    educAidLazyImagesEls.foreach(function(el) {
-        el.setAttribute('loading', 'eager')
-    })
+    for (var i = 0; i < educAidLazyImagesEls.length; i++) {
+        educAidLazyImagesEls[i].loading = "eager"; 
+    }
 }

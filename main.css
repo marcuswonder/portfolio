@@ -1,40 +1,38 @@
 button[selected="true"] {
-    background-color: white;
-    color: black    
+  background-color: white;
+  color: black    
 }
 
 .toggle-slct {
-    cursor: pointer
+  cursor: pointer
 }
 
 /* carousel */
 
 .carousel-inner{
-    width:100%;
-    max-height: 700px !important;
-  }
-  
+  width:100%;
+  max-height: 700px !important;
+}
+
 .carousel-portrait{
-    width:100%;
-    max-height: 700px !important;
-    object-fit:none;
+  width:100%;
+  max-height: 700px !important;
+  object-fit:none;
 }
 
 .carousel-landscape{
-    width:100%;
-    margin: -100px 0px -100px 0px;
+  width:100%;
+  margin: -100px 0px -100px 0px;
 }
 
 .carousel-control-next,
 .carousel-control-prev , .carousel-indicators {
-    mix-blend-mode: difference;
+  mix-blend-mode: difference;
 }
 
 
 /* Audio Player */
 
-html,
-body,
 .view {
   height: 100%;
 }
@@ -92,11 +90,3 @@ body,
   background: black;
   cursor: pointer;
 }
-
-
-/* #loading {
-  overflow: hidden;
-  transition-duration: 0.8s;
-  transition-property: transform;
-  transform: rotate(360deg);
-} */
