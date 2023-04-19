@@ -264,10 +264,11 @@ growSaloneProProjectBtn.onclick = function() {
 }
 
 educAidProProjectBtn.onclick = function() {
+    console.log("educAidProProjectBtn being hit")
     resetToProfessionalPage()
     educAidProProject.style.display = ''
     scrollToSubNav()
-    loadEducAidImages()
+    // loadEducAidImages()
 }
 
 roadmenExperienceBtn.onclick = function() {
