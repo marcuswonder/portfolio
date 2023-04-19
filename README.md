@@ -62,11 +62,18 @@ https://portfolio-marcus-smith.herokuapp.com/index.html
 
 ## Known Issues
 I know that there are the following issues:
-    - Buttons do not stay active when pushed on mobile - medium priority
+<ul>
+<li> Buttons do not stay active when pushed on mobile - medium priority
+</ul>
+
+<br>
+<br>
 
 ## Icebox Features
 In time, I would like to include the following features:
-    - More project content on both the personal and professional sides
-    - Fully embedded media player for Beckett recordings and DJ Mixes
-    - Navigation would be improved if I provided relevant nav buttons at the bottom of each page 
+<ul>
+<li> More project content on both the personal and professional sides </li>
+<li> Fully embedded media player for Beckett recordings and DJ Mixes </li>
+<li> Navigation would be improved if I provided relevant nav buttons at the bottom of each page </li> 
+</ul>
     
