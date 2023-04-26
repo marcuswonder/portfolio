@@ -54,7 +54,7 @@ In this project I used the following tools:
 <br>
 <br>
 
-## Play the game!
+## Check it out!
 https://portfolio-marcus-smith.herokuapp.com/index.html
 
 <br>
