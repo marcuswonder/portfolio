@@ -175,8 +175,6 @@ function resetToPersonalPage() {
     personalHeadshotEl.style.display = ''
 }
 
-
-
 function deselectAllNavButtonEls() {
     let NavButtonEls = Array.from(document.querySelectorAll(".nav-button"))
     NavButtonEls.forEach(function(el) {
@@ -327,7 +325,6 @@ const growSaloneAccordionEl2 = document.getElementById("growSaloneAccordion2")
 const growSaloneAccordionEl3 = document.getElementById("growSaloneAccordion3")
 
 growSaloneAccordionEl1.onclick = function() {
-    console.log("growSaloneAccordionEl1 hit")
     scrollToGrowSaloneAccordion()
 }
 
@@ -340,35 +337,35 @@ growSaloneAccordionEl3.onclick = function() {
 }
 
 
-var myCarousel = document.querySelector('#roadmenCarouselOne')
-var carousel = new bootstrap.Carousel(myCarousel)
+const myCarousel = document.querySelector('#roadmenCarouselOne')
+const carousel = new bootstrap.Carousel(myCarousel)
 
 function loadEchoImages() {
-    for (var i = 0; i < echoLazyImagesEls.length; i++) {
+    for (let i = 0; i < echoLazyImagesEls.length; i++) {
         echoLazyImagesEls[i].loading = "eager"; 
     }
 }
 
 function loadRoadmenImages() {
-    for (var i = 0; i < roadmenLazyImagesEls.length; i++) {
+    for (let i = 0; i < roadmenLazyImagesEls.length; i++) {
         roadmenLazyImagesEls[i].loading = "eager"; 
     }
 }
 
 function loadSasImages() {
-    for (var i = 0; i < sasLazyImagesEls.length; i++) {
+    for (let i = 0; i < sasLazyImagesEls.length; i++) {
         sasLazyImagesEls[i].loading = "eager"; 
     }
 }
 
 function loadSaloneImages() {
-    for (var i = 0; i < saloneLazyImagesEls.length; i++) {
+    for (let i = 0; i < saloneLazyImagesEls.length; i++) {
         saloneLazyImagesEls[i].loading = "eager"; 
     }
 }
 
 function loadEducAidImages() {
-    for (var i = 0; i < educAidLazyImagesEls.length; i++) {
+    for (let i = 0; i < educAidLazyImagesEls.length; i++) {
         educAidLazyImagesEls[i].loading = "eager"; 
     }
 }
