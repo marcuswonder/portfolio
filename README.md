@@ -55,7 +55,7 @@ With respect to planning, since it was a plain website I didn't need to lay out 
 Having built out the content map, I started by building the top (fixed) nav, the professional/personal toggle nav and the header image. Since this toggling functionality was the central objective of the website, I wanted to ensure that I could get that functionality built and tested.
 
 ```
-<!-- JavaScript code handling personal/professional toggle functionality -->
+// JavaScript code handling personal/professional toggle functionality
 professionalToggleSlctEl.addEventListener('click', function() {
     if(toggleEl.checked === false ) {
         toggleEl.checked = true    
@@ -97,7 +97,7 @@ Next, I went about building the floating Nav and setting up the HTML structure f
 
 
 ```
-<!-- JavaScript DOM manipulation of nav buttons and content example -->
+// JavaScript DOM manipulation of nav buttons and content example
 professionalAboutBtnEl.onclick = function() {
     resetToProfessionalPage()
     professionalAboutBtnEl.setAttribute('selected', 'true')
@@ -109,7 +109,7 @@ professionalAboutBtnEl.onclick = function() {
 
 You can see that I tried to maintain DRY code by creating functions to automate repeated tasks such as resetting to the Professional Page:
 ```
-<!-- JavaScript DOM manipulation to avoid repetition -->
+// JavaScript DOM manipulation to avoid repetition
 function resetToProfessionalPage() {
     deselectAllNavButtons()
     hideAllConditionalEls()
@@ -146,7 +146,7 @@ The content that I had wanted to display on the personal side of my website caus
 I wanted to use a carousel for the images, and used Bootstrap's recommended method. In total, the site has 353 images hosted on Google Images. Since this was designed as an SPA (SPW?), the browser would attempt to load all images and caused the site to Upon testing, I found that this slowed the loading time of the website so dramatically that it was more or less unusable. Therefore, I had to research and deploy a method to prevent the images from all auto-loading. I found a an explainer for lazy images, and employed that to improve load times:
 
 ```
-<!-- HTML Bootstrap code to demonstrate only images 1-3 auto-load (Google Image links cropped for legibility) -->
+ // HTML Bootstrap code to demonstrate only images 1-3 auto-load (Google Image links cropped for legibility)
 <div class="carousel-inner">
     <div class="carousel-item active">
         <img src="https://lh3.googleusercontent.com/..." class="d-block w-100 carousel-landscape" alt="Slide 1">
@@ -172,7 +172,7 @@ I wanted to use a carousel for the images, and used Bootstrap's recommended meth
 <br>
 
 ```
-<!-- JavaScript to load lazy images on content selection example -->
+// JavaScript to load lazy images on content selection example
 
 const echoLazyImagesEls = document.getElementsByClassName("echo-lazy")
 
@@ -221,10 +221,11 @@ You can find a live tracker of my bug and improvement pipeline on cancan, my pro
 
 Use the following credentials to log in to the app and navigate to "my boards", and visit the "Portfolio" page:
 <br>
+<ul>
     <li>User: guest@guest.com
 <br>
     <li>Pass: guest
-
+</ul>
 <br>
 <br>
 
