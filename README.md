@@ -32,7 +32,7 @@ In this project I used the following tools:
 <br>
 <br>
 
-## Timefrane & Working Team
+## Timeframe & Working Team
 This was not issued as a project; rather, a website that I needed and therefore built. I worked on my own over a period of roughly a month. I designed and built the structure for the site in roughly a week, with more time spent populating and writing content - still a bit of a work in progress.
 
 <br>
