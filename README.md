@@ -54,8 +54,7 @@ With respect to planning, since it was a plain website I didn't need to lay out 
 ## Build Process
 Having built out the content map, I started by building the top (fixed) nav, the professional/personal toggle nav and the header image. Since this toggling functionality was the central objective of the website, I wanted to ensure that I could get that functionality built and tested.
 
-```
-// JavaScript code handling personal/professional toggle functionality
+```JavaScript 
 professionalToggleSlctEl.addEventListener('click', function() {
     if(toggleEl.checked === false ) {
         toggleEl.checked = true    
@@ -96,8 +95,7 @@ function handleToggleState() {
 Next, I went about building the floating Nav and setting up the HTML structure for the content. Having set up the frame with placeholder text content, I built the DOM manipulation to show/hide the relevant content sections.
 
 
-```
-// JavaScript DOM manipulation of nav buttons and content example
+```JavaScript 
 professionalAboutBtnEl.onclick = function() {
     resetToProfessionalPage()
     professionalAboutBtnEl.setAttribute('selected', 'true')
@@ -108,8 +106,7 @@ professionalAboutBtnEl.onclick = function() {
 <br>
 
 You can see that I tried to maintain DRY code by creating functions to automate repeated tasks such as resetting to the Professional Page:
-```
-// JavaScript DOM manipulation to avoid repetition
+```JavaScript 
 function resetToProfessionalPage() {
     deselectAllNavButtons()
     hideAllConditionalEls()
@@ -145,8 +142,7 @@ The content that I had wanted to display on the personal side of my website caus
 ### Carousel
 I wanted to use a carousel for the images, and used Bootstrap's recommended method. In total, the site has 353 images hosted on Google Images. Since this was designed as an SPA (SPW?), the browser would attempt to load all images and caused the site to Upon testing, I found that this slowed the loading time of the website so dramatically that it was more or less unusable. Therefore, I had to research and deploy a method to prevent the images from all auto-loading. I found a an explainer for lazy images, and employed that to improve load times:
 
-```
- // HTML Bootstrap code to demonstrate only images 1-3 auto-load (Google Image links cropped for legibility)
+```HTML
 <div class="carousel-inner">
     <div class="carousel-item active">
         <img src="https://lh3.googleusercontent.com/..." class="d-block w-100 carousel-landscape" alt="Slide 1">
@@ -171,9 +167,7 @@ I wanted to use a carousel for the images, and used Bootstrap's recommended meth
 
 <br>
 
-```
-// JavaScript to load lazy images on content selection example
-
+```JavaScript 
 const echoLazyImagesEls = document.getElementsByClassName("echo-lazy")
 
 function loadEchoImages() {
@@ -189,8 +183,7 @@ Whilst this did improve load times, you will find that the site is still not loa
 
 ### Accordion
 The section on Grow Salone held a lot of content, and I decided to use an accordion to display it all in a logical way. However, upon writing the content I found that, once reaching the end of the longest section ("2. Training"), if you moved onto the next accordion the window would remain where the previous section had finished (i.e. below the top of the accordion). Therefore, I included a function to scroll back into view:
-```
-<!-- JavaScript scroll into view -->
+```JavaScript 
 function scrollToGrowSaloneAccordion() {
     document.getElementById("startOfPSP").scrollIntoView();
 }
