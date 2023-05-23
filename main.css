@@ -199,6 +199,12 @@
   color: black;
 }
 
+.professional-nav-button[selected="true"] {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
 .professional-nav-button:hover {
   background-color: white;
   border-color: grey;
@@ -221,13 +227,19 @@
 
 
 .personal-nav-button {
-  background-color: white;
-  border-color:  #95D5B2;
+  border-color: white;
+  background-color:  #95D5B2;
   color: black;
 }
 
 .personal-nav-button:focus {
   background-color:  #95D5B2;
+  border-color: white;
+  color: black;
+}
+
+.personal-nav-button[selected="true"] {
+  background-color:  white;
   border-color: white;
   color: black;
 }

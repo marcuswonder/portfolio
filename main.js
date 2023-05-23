@@ -19,7 +19,9 @@ const professionalEl = Array.from(document.getElementsByClassName("professionalE
 const personalNav = document.getElementsByClassName("personal-nav")[0]
 const professionalNav = document.getElementsByClassName("professional-nav")[0]
 
-const navButtons = Array.from(document.getElementsByClassName("nav-button"))
+const professionalNavButtons = Array.from(document.getElementsByClassName("professional-nav-button"))
+const personalNavButtons = Array.from(document.getElementsByClassName("personal-nav-button"))
+const navButtons = professionalNavButtons.concat(personalNavButtons)    
 
 const professionalAboutBtnEl = document.getElementById("professional-about-button")
 const professionalSkillsBtnEl = document.getElementById("professional-skills-button")
@@ -152,8 +154,8 @@ function handleToggleState() {
         personalAboutEl.style.display = ''
     } else {
         resetToProfessionalPage()
-        professionalAboutBtnEl.setAttribute('selected', 'true')
         professionalAboutEl.style.display = ''
+        professionalAboutBtnEl.setAttribute('selected', 'true')
     }
 }
 
@@ -169,16 +171,16 @@ function resetToProfessionalPage() {
     professionalHeaderEl.style.display = ''
     personalHeaderEl.style.display = 'none'
     professionalNav.style.display = ''
-    professionalHeadshotEl.style.display = ''
+    personalNav.style.display = 'none'
 }
 
 function resetToPersonalPage() {
     deselectAllNavButtons()
     hideAllConditionalEls()
-    professionalHeaderEl.style.display = 'none'
     personalHeaderEl.style.display = ''
+    professionalHeaderEl.style.display = 'none'
+    professionalNav.style.display = 'none'
     personalNav.style.display = ''
-    personalHeadshotEl.style.display = ''
 }
 
 function deselectAllNavButtonEls() {
