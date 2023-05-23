@@ -1,40 +1,19 @@
 
 @keyframes green-wave-animation {
   0% {
-    color: #1B4332;
-  }
-  9.09% {
-    color: #2D6A4F;
-  }
-  18.18% {
-    color: hwb(153 25% 43%);
-  }
-  27.27% {
-    color: #52b788;
-  }
-  36.36% {
-    color: hwb(150 45% 22%);
-  }
-  45.45% {
-    color: #95D5B2;
-  }
-  54.54% {
-    color: #74C69D;
-  }
-  63.63% {
-    color: #52B788;
-  }
-  72.72% {
     color: #40916C;
   }
-  81.81% {
-    color: #2D6A4F;
+  25% {
+    color: #52b788;
   }
-  90.9% {
-    color: #1B4332;
+  50% {
+    color: #73c79d;
+  }
+  75% {
+    color: #52b788;
   }
   100% {
-    color: #1B4332;
+    color: #40916C;
   }
 }
 
@@ -46,20 +25,14 @@
   0% {
     color: black;
   }
-  16.67% {
-    color: darkgrey;
-  }
-  33.34% {
+  25% {
     color: grey;
   }
-  50.01% {
-    color: lightgrey;
-  }
-  66.68% {
-    color: grey;
-  }
-  83.35% {
+  50% {
     color: darkgrey;
+  }
+  75% {
+    color: grey;
   }
   100% {
     color: black;
@@ -118,21 +91,16 @@
   }
 }
 
-
-
-
-
-button[selected="true"] {
-  background-color: white;
-  color: black    
-}
-
 .navbar {
   height: 48px
 }
 
 .nav-link {
   padding: 0;
+}
+
+#personal-nav {
+  background-color: #40916d;
 }
 
 .toggle-slct {
@@ -219,7 +187,50 @@ button[selected="true"] {
 }
 
 
-.nav-button:focus {
+.professional-nav-button:focus {
+  background-color: black;
+  border-color: white;
+  color: black;
+}
+
+.professional-nav-button:focus {
   background-color: white;
+  border-color: black;
+  color: black;
+}
+
+.professional-nav-button:hover {
+  background-color: white;
+  border-color: grey;
+  color: black;
+}
+
+.personal-nav-button {
+  background-color: white;
+  border-color:  #95D5B2;
+  color: black;
+}
+
+.personal-nav-button:focus {
+  background-color:  #95D5B2;
+  border-color: white;
+  color: black;
+}
+
+.personal-nav-button:hover {
+  background-color:  #95D5B2;
+  border-color: white;
+  color: black;
+}
+
+.personal-button {
+  border-color: white;
+  background-color:  #40916d;
+  color: white;
+}
+
+.personal-button:hover {
+  background-color: #95D5B2;
+  border-color: white;
   color: black;
 }
