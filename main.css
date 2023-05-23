@@ -245,7 +245,7 @@
 }
 
 .personal-nav-button:hover {
-  background-color:  #95D5B2;
+  background-color:  white;
   border-color: white;
   color: black;
 }
@@ -257,7 +257,11 @@
 }
 
 .personal-button:hover {
-  background-color: #95D5B2;
+  background-color: white;
   border-color: white;
   color: black;
+}
+
+.personal-text {
+  color:  #40916d;
 }

@@ -242,30 +242,35 @@ personalProjectsBtnEl.onclick = function() {
 cancanProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     cancanProProject.style.display = ''
+    professionalProjectsBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
 }
 
 foodioProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     foodioProProject.style.display = ''
+    professionalProjectsBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
 }
 
 thisPortfolioProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     thisPortfolioProProject.style.display = ''
+    professionalProjectsBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
 }
 
 blackjackProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     blackjackProProject.style.display = ''
+    professionalProjectsBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
 }
 
 growSaloneProProjectBtn.onclick = function() {
     resetToProfessionalPage()
     growSaloneProProject.style.display = ''
+    professionalProjectsBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
 }
 
@@ -273,6 +278,7 @@ educAidProProjectBtn.onclick = function() {
     console.log("educAidProProjectBtn being hit")
     resetToProfessionalPage()
     educAidProProject.style.display = ''
+    professionalProjectsBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
     // loadEducAidImages()
 }
@@ -280,6 +286,7 @@ educAidProProjectBtn.onclick = function() {
 roadmenExperienceBtn.onclick = function() {
     resetToPersonalPage()
     roadmenExperience.style.display = ''
+    personalExperiencesBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
     loadRoadmenImages()
 }
@@ -287,6 +294,7 @@ roadmenExperienceBtn.onclick = function() {
 saloneExperienceBtn.onclick = function() {
     resetToPersonalPage()
     saloneExperience.style.display = ''
+    personalExperiencesBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
     loadSaloneImages()
 }
@@ -294,6 +302,7 @@ saloneExperienceBtn.onclick = function() {
 sasExperienceBtn.onclick = function() {
     resetToPersonalPage()
     sasExperience.style.display = ''
+    personalExperiencesBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
     loadSasImages()
 }
@@ -301,6 +310,7 @@ sasExperienceBtn.onclick = function() {
 educAidFilmsPersonalProjectBtn.onclick = function() {
     resetToPersonalPage()
     educAidFilmsPersonalProject.style.display = ''
+    personalProjectsBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
     loadEducAidImages()
 }
@@ -308,6 +318,7 @@ educAidFilmsPersonalProjectBtn.onclick = function() {
 echoFestivalPersonalProjectBtn.onclick = function() {
     resetToPersonalPage()
     echoFestivalPersonalProject.style.display = ''
+    personalProjectsBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
     loadEchoImages()
 }
@@ -315,6 +326,7 @@ echoFestivalPersonalProjectBtn.onclick = function() {
 samuelBeckettPersonalProjectBtn.onclick = function() {
     resetToPersonalPage()
     samuelBeckettPersonalProject.style.display = ''
+    personalProjectsBtnEl.setAttribute('selected', 'true')
     scrollToSubNav()
 }
 
