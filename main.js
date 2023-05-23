@@ -5,7 +5,9 @@ const professionalToggleSlctEl = document.getElementById('professional-toggle')
 const toggleEl = document.getElementById('flexSwitchCheckDefault')
 const personalToggleSlctEl = document.getElementById('personal-toggle')
 
-const headerEl = document.getElementById('header')
+// const headerEl = document.getElementById('header')
+const professionalHeaderEl = document.getElementById('professional-header')
+const personalHeaderEl = document.getElementById('personal-header')
 const subNavEl = document.getElementById('sub-nav')
 
 const professionalHeadshotEl = document.getElementById('professionalHeadshot')
@@ -164,6 +166,8 @@ function resetToTopNavBarsOnly() {
 function resetToProfessionalPage() {
     deselectAllNavButtons()
     hideAllConditionalEls()
+    professionalHeaderEl.style.display = ''
+    personalHeaderEl.style.display = 'none'
     professionalNav.style.display = ''
     professionalHeadshotEl.style.display = ''
 }
@@ -171,6 +175,8 @@ function resetToProfessionalPage() {
 function resetToPersonalPage() {
     deselectAllNavButtons()
     hideAllConditionalEls()
+    professionalHeaderEl.style.display = 'none'
+    personalHeaderEl.style.display = ''
     personalNav.style.display = ''
     personalHeadshotEl.style.display = ''
 }
