@@ -187,10 +187,10 @@
 }
 
 
-.professional-nav-button:focus {
+.professional-nav-button {
   background-color: black;
   border-color: white;
-  color: black;
+  color: white;
 }
 
 .professional-nav-button:focus {
@@ -204,6 +204,21 @@
   border-color: grey;
   color: black;
 }
+
+.professional-button {
+  border-color: white;
+  background-color: black;
+  color: white;
+}
+
+.professional-button:hover {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+
+
 
 .personal-nav-button {
   background-color: white;
